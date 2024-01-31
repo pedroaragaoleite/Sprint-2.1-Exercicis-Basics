@@ -1,3 +1,5 @@
+// Bloc 1.1: Arrow functions
+
 // NIVEL 1
 
 
@@ -35,7 +37,59 @@ newPerson.greet()
 
 // NIVEL 2
 
+//Exercici 4
+//Funció de fletxa dins d'un loop: 
+//Crea una funció anomenada printNumbers que accepti un array de números
+//i utilitzi un loop for per imprimir cada número a la consola utilitzant una funció de fletxa.
+
+const numbers = [0, 2, 4, 6, 8, 10];
+
+const printNumbers = (array) => {
+    for(let i = 0; i < array.length; i++) {
+        const number = array[i];
+        //llamar un función anónima dentro del loop en cada iteración
+    (() => {
+        console.log(number);
+    })();
+    }
+}
+
+printNumbers(numbers);
 
 
+/* -------------------------------------------------------------------------- */
+
+// NIVEL 3
+
+// Funció de fletxa amb 'setTimeout':
+// Crea una funció de fletxa que imprimeixi un missatge a la consola després d'esperar 3 segons.
+
+
+setTimeout(() => {
+    console.log("waited 3 seconds");
+}, 3000);
+
+
+
+// Bloc 1.2: Operador ternari
+
+// Nivell 1
+
+//Exercici 1
+
+// Operador ternari bàsic: 
+// Escriu una funció potConduir que accepti l'edat com a paràmetre i utilitzi l'operador ternari per determinar si l'usuari pot conduir.
+// Si l'edat és 18 o més, ha de retornar 'Pots conduir'. Si no, ha de retornar 'No pots conduir'.
+
+function potConduir(edad) {
+   return edad >= 18 ? "Puedes conducir" : "No puedes conducir.";
+} 
+
+// Exercici 2
+// Ús amb operadors de comparació:
+// Escriu una expressió que utilitzi l'operador ternari per determinar quin dels dos nombres donats (num1 i num2) és més gran.
+// Si num1 és més gran, retorna 'num1 és més gran'. Si no, retorna 'num2 és més gran'.
+
+// dfdfdf
 
 
