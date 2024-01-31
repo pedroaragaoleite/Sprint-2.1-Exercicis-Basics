@@ -90,6 +90,33 @@ function potConduir(edad) {
 // Escriu una expressió que utilitzi l'operador ternari per determinar quin dels dos nombres donats (num1 i num2) és més gran.
 // Si num1 és més gran, retorna 'num1 és més gran'. Si no, retorna 'num2 és més gran'.
 
-// dfdfdf
+const comparacion = (numOne, numTwo) => {
+    if(numOne === numTwo) {
+        console.log("Los dos número son iguales!");
+    } else {
+        const num = numOne > numTwo ? "numOne és més gran" : "numTwo és mé gran";
+        return num;
+    }  
+}
 
+
+
+//Nivell 2
+
+//Exercici 3
+//Ús enllaçat d'operadors ternaris:
+// Escriu una expressió que utilitzi enllaços d'operadors ternaris per determinar si un número és positiu, negatiu o zero.
+
+const determinarNum = (num) => {
+    num > 0 ? "El número es positivo" : num < 0 ? 
+    "El número es negativo"
+    : num === 0 ? 
+    "El número es cero";
+}
+    
+
+
+
+// Operador ternari amb funcions:
+// Crea una funció trobarMaxim que accepti tres paràmetres (a, b, c) i utilitzi l'operador ternari per determinar el valor màxim.
 
