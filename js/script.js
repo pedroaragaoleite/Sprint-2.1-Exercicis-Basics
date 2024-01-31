@@ -108,15 +108,13 @@ const comparacion = (numOne, numTwo) => {
 // Escriu una expressió que utilitzi enllaços d'operadors ternaris per determinar si un número és positiu, negatiu o zero.
 
 const determinarNum = (num) => {
-    num > 0 ? "El número es positivo" : num < 0 ? 
-    "El número es negativo"
-    : num === 0 ? 
-    "El número es cero";
-}
-    
-
+   return num === 0 ? `El número es ${num}` : num > 0 ? `El número ${num} es positivo` : `El número ${num} es negativo`;
+}   
 
 
 // Operador ternari amb funcions:
 // Crea una funció trobarMaxim que accepti tres paràmetres (a, b, c) i utilitzi l'operador ternari per determinar el valor màxim.
 
+const trombarMaxim = (a, b, c) => {
+    return a > b && a > c ? `El ${a} es mayor que ${b} y el ${c}` : b > a && b > c ? `El ${b} es mayor que ${a} y el ${c}` : `El ${c} es mayor que ${a} y el ${b}`; 
+}
