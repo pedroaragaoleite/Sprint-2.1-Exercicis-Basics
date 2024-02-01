@@ -77,7 +77,7 @@ console.log(restoDeElementos);
 const tresArgumentos = (a, b, c) => {
     console.log(`Elemento a = ${a}`)
     console.log(`Elemento B = ${b}`)
-    console.log(`Elemento C = ${c}.`)
+    console.log(`Elemento C = ${c}`)
 }
 
 const arraytresElementos = ["Aire", "Fuego", "Agua"];
