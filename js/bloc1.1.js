@@ -65,8 +65,14 @@ printNumbers(numbers);
 // Crea una funció de fletxa que imprimeixi un missatge a la consola després d'esperar 3 segons.
 
 
-setTimeout(() => {
-    console.log("waited 3 seconds");
-}, 3000);
+const resultTime = () => {
+    setTimeout(() => {
+        console.log("waited 3 seconds");
+    }, 3000);
+}
+
+resultTime();
+
+
 
 
